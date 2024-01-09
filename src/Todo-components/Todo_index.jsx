@@ -1,3 +1,4 @@
+import GetTodo from "./Todo_gattiing";
 import Todo_Process from "./Todo_porcess";
 const TodoList = [
     {
@@ -14,6 +15,7 @@ const TodoList = [
 const TodoIndex = () => {
     return (
         <section>
+            <GetTodo />
             <Todo_Process todolist = {TodoList} />
         </section>
     )
