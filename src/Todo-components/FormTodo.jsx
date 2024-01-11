@@ -16,24 +16,24 @@ const FormTodo = (porps) => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit} className="text-red-600">
-                <label htmlFor="Title">Title : </label>
+            <form onSubmit={handleSubmit} className="text-white w-[100%] bg-slate-800 px-20 sm:px-3 py-15 sm:my-2">
                 <input 
                 type="text" 
                 placeholder="Add a title"
                 value={title}
                 name="title"
+                className="text-black w-full sm:w-full h-[70px] px-5 py-3 mt-5 mb-2"
                 onChange={handleChange}
                 /> <br />
-                <label htmlFor="Decription">Decription : </label>
                 <textarea 
                 name="dec"
                 value={dec}
                 onChange={handleChange}
                 placeholder="Add a decription"
+                className="text-black w-full sm:w-full h-[150px] px-5 py-3 mt-5 mb-2"
                 >
-                </textarea>
-                <button type="submit">Submit</button>
+                </textarea><br />
+                <button type="submit" className="bg-lime-600 text-center font-bold w-full mb-5 px-5 py-3 sm:w-full">Add Item</button>
             </form>
         </div>
     )

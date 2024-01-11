@@ -17,7 +17,7 @@ const TodoIndex = () => {
         })
     }
     return (
-        <div>
+        <div className="w-[80%] h-screen bg-black">
             <FormTodo getTodos = {getTodos} />
             <Todos todos = {todos} removeTodos = {removeTodos}/>
         </div>
