@@ -1,4 +1,4 @@
-import TodoIndex from "./Todo-components/Todo_index";
+import TodoIndex from "./Todo-components/Index";
 const App = () => {
     return (
         <div className="text-3xl flex flex-col h-screen bg-black items-center justify-center text-white">
